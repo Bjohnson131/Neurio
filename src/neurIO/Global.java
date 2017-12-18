@@ -1,5 +1,15 @@
 package neurIO;
 
+/**
+ * @author Brice Johnson
+ * @version 0.01
+ * @category Main
+ **/
+/**
+ * Global
+ * ===
+ * Holds common values and functions that are used throughout the API
+ **/
 public class Global {
 	public static String[] args;
 	

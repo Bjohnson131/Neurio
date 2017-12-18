@@ -1,9 +1,21 @@
+/**
+ * @author Brice Johnson
+ * @version 0.01
+ * @category Data
+ **/
 package neurIO.system;
 
 import neurIO.Global;
 
+
 public class Truth {
-	
+	/**
+	 * Truth
+	 * ===
+	 * A truth is a certain output given explicit inputs.
+	 * A truth can contain many inputs, but only one output
+	 * A list that contains outputs for every combination of inputs of length n is a truth table.
+	 **/
 	boolean[] conditions;
 	boolean result;
 	public String name = "";

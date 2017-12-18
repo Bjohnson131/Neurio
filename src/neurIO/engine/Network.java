@@ -1,7 +1,18 @@
+/**
+ * @author Brice Johnson
+ * @version 0.01
+ * @category Data
+ **/
 package neurIO.engine;
 
 import neurIO.system.Node;
 
+/**
+ * Network
+ * ===
+ * A network (as it stands now) is a set of columns that are interconnected.
+ * Usually, one column is dedicated to inputs, and one is dedicated to outputs.
+ **/
 public class Network {
 	final int colheight;
 	Column[] cols;

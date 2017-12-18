@@ -1,12 +1,23 @@
+/**
+ * @author Brice Johnson
+ * @version 0.01
+ * @category Data
+ **/
 package neurIO.system;
 
+/**
+ * Neuron
+ * ===
+ * The basic unit of processing.
+ * Uses references to children to look up its result on a truth table held in RAM.
+ **/
 public class Neuron extends Node {
 	TruthTable truths;
 	Node[] children;
 	TruthTable function;
 	int width;
 	boolean evaluated = false;
-	boolean value;
+	volatile boolean value;//Volatility helps with evaluation.
 
 	public Neuron(Node[] children, TruthTable function) {
 		this.children = children;
@@ -16,6 +27,10 @@ public class Neuron extends Node {
 
 		}
 	}
+	
+	public Neuron clone(Node[] newTargets){
+		return new Neuron(newTargets, this.truths);
+	}
 
 	public boolean isValid() {
 		return width == children.length;
@@ -23,26 +38,27 @@ public class Neuron extends Node {
 
 	@Override
 	public boolean getValue() {
-		if(!evaluated) {
-			System.out.println("wid: "+width);
-			System.out.println("fwid"+function.width);
+		if (!evaluated) {
 			boolean[] ins = new boolean[width];
-			for (int i = 0; i < width-1; i++) {
+			for (int i = 0; i < width - 1; i++) {
 				ins[i] = children[i].getValue();
 			}
 			value = function.getResult(ins);
-			System.out.println("NeuronVal: "+value);
 			evaluated = true;
 		}
 		return value;
 	}
-	
+
 	@Override
-	public void resetValue(){
+	public void resetValue() {
 		evaluated = false;
 	}
-
+	
+	
 	public static class Presets {
+		/**
+		 * Presets are commonly used nodes, here for ease of access.
+		 **/
 		public static Neuron AND(Node in1, Node in2) {
 			boolean[] truths = { false, false, false, true };
 			Node[] inputs = { in1, in2 };

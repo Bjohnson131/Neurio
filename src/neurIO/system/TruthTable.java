@@ -1,6 +1,17 @@
+/**
+ * @author Brice Johnson
+ * @version 0.01
+ * @category Data
+ **/
 package neurIO.system;
 
 public class TruthTable {
+	/**
+	 * TruthTable
+	 * ===
+	 * A truth table contains outputs for every combination of inputs of length n.
+	 * The current configuration of this class allows for some inputs to be missing, making the table incomplete.
+	 **/
 	public Truth[] truths;
 	public int width;
 	

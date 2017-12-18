@@ -1,7 +1,6 @@
 package neurIO;
-
-import neurIO.data.BitInput;
-import neurIO.data.BitInputSet;
+import neurIO.data.bitInput.BitInput;
+import neurIO.data.bitInput.BitInputSet;
 import neurIO.engine.Column;
 import neurIO.engine.Network;
 import neurIO.system.Neuron;
@@ -9,9 +8,18 @@ import neurIO.system.Node;
 import neurIO.system.OutputNode;
 import neurIO.system.Truth;
 import neurIO.system.TruthTable;
-
+/**
+ * Start
+ * ===
+ *  
+ *This is the main class to start tests, GUI, etc.
+ **/
 public class Start {
 	
+	/**
+	 *  The main program used to start the GUI, do tests, etc. 
+	 *  This is NOT for API usage.  
+	 **/
 	public static void main(String[] args) {
 		Global.args = args;
 		printColTest();
@@ -19,11 +27,15 @@ public class Start {
 		printHelp();
 		printNetworkTest();
 		switch(args[0]){
-		
-		default : printHelp();
+			default : printHelp();
 		}
 	}
 	
+	/**
+	 * Doesn't actually print any help at the moment...
+	 * 
+	 * will eventually print out a command line help form
+	 **/
 	public static void printHelp(){
 		System.out.println("NEURIO 2017 Brice Johnson");
 		System.out.println("-----------------------------");
@@ -31,18 +43,28 @@ public class Start {
 		System.out.println("-----------------------------");
 	}
 	
+	/**
+	 * Tests the naming system of Columns. This is in excel
+	 * (A-Z,AA-ZZ, etc)
+	 **/
 	private static void printColTest() {
 		for(int i = 0; i < 27; i++) {
 			System.out.println(Truth.colIndexName(i));
 		}
 	}
 	
+	/**
+	 * Prints a truth table using the ToString test.
+	 **/
 	private static void printTruthTest(){
 		boolean[] conditions = {false, false, true};
 		Truth truth = new Truth(conditions, true);
 		System.out.println(truth.toString());
 	}
 	
+	/**
+	 * Prints out the result of a summing network which sums one byte at a time
+	 **/
 	private static void printNetworkTest(){
 		boolean[] xor = {false,true,true,false};
 		boolean[] and = {false,false,false,true};
@@ -79,13 +101,13 @@ public class Start {
 		bus1.numToInput(234);
 		bus2.numToInput(154);
 		
-		Node[] bitIns1 = {A1,B1};
-		Neuron sum1= new Neuron(bitIns1, new TruthTable(xor));
-		Neuron car1= new Neuron(bitIns1, new TruthTable(and));
-		Column c1 = (new Column(sum1,car1));
-		eightBitAdder.addColumn(c1);
-		Node[] bitIns2 = {A2,B2,car1};
-		Neuron sum2 = new Neuron(bitIns2,new TruthTable(sum));
+		Node[] bitIns1 = {A1,B1};  //Add the first bit of numbers A and B together.
+		Neuron sum1= new Neuron(bitIns1, new TruthTable(xor)); //Get the sum of the bits
+		Neuron car1= new Neuron(bitIns1, new TruthTable(and)); //Get the carry of the bits
+		Column c1 = (new Column(sum1,car1)); // Make into a function
+		eightBitAdder.addColumn(c1);// Add to a network
+		Node[] bitIns2 = {A2,B2,car1};//Add the last carry, and the second bits together.
+		Neuron sum2 = new Neuron(bitIns2,new TruthTable(sum));// Different truth tables are used for 3 bits.
 		Neuron car2 = new Neuron(bitIns2,new TruthTable(car));
 		Column c2 = (new Column(sum2,car2));
 		eightBitAdder.addColumn(c2);

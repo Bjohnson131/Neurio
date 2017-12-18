@@ -1,6 +1,16 @@
+/**
+ * @author Brice Johnson
+ * @version 0.01
+ * @category Data
+ **/
 package neurIO.system;
 
 public class OutputNode extends Node{
+	/**
+	 * OutputNode
+	 * ===
+	 * This node is for getting a deterministic value from a previous node.
+	 **/
 	Node resultNode;
 	
 	public OutputNode(Node result){
