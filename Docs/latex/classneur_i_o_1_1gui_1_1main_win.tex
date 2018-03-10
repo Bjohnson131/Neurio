@@ -1,0 +1,97 @@
+\hypertarget{classneur_i_o_1_1gui_1_1main_win}{}\section{neur\+I\+O.\+gui.\+main\+Win Class Reference}
+\label{classneur_i_o_1_1gui_1_1main_win}\index{neur\+I\+O.\+gui.\+main\+Win@{neur\+I\+O.\+gui.\+main\+Win}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classneur_i_o_1_1gui_1_1main_win_afea0b56eba10143502905975ceba7e25}{main\+Win} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classneur_i_o_1_1gui_1_1main_win_a83d7ab4e35ec91fe149719b2c25cf834}{main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classneur_i_o_1_1gui_1_1main_win_aab47900a0e64469a9b97c6270643ef14}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classneur_i_o_1_1gui_1_1main_win_ad9f1f617ba2e697a71d2817b0ed8d1fc}\label{classneur_i_o_1_1gui_1_1main_win_ad9f1f617ba2e697a71d2817b0ed8d1fc}} 
+J\+Frame {\bfseries frm\+Neurio}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classneur_i_o_1_1gui_1_1main_win_afea0b56eba10143502905975ceba7e25}\label{classneur_i_o_1_1gui_1_1main_win_afea0b56eba10143502905975ceba7e25}} 
+\index{neur\+I\+O\+::gui\+::main\+Win@{neur\+I\+O\+::gui\+::main\+Win}!main\+Win@{main\+Win}}
+\index{main\+Win@{main\+Win}!neur\+I\+O\+::gui\+::main\+Win@{neur\+I\+O\+::gui\+::main\+Win}}
+\subsubsection{\texorpdfstring{main\+Win()}{mainWin()}}
+{\footnotesize\ttfamily neur\+I\+O.\+gui.\+main\+Win.\+main\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create the application. 
+\begin{DoxyCode}
+31                      \{
+32         \hyperlink{classneur_i_o_1_1gui_1_1main_win_aab47900a0e64469a9b97c6270643ef14}{initialize}();
+33     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classneur_i_o_1_1gui_1_1main_win_aab47900a0e64469a9b97c6270643ef14}\label{classneur_i_o_1_1gui_1_1main_win_aab47900a0e64469a9b97c6270643ef14}} 
+\index{neur\+I\+O\+::gui\+::main\+Win@{neur\+I\+O\+::gui\+::main\+Win}!initialize@{initialize}}
+\index{initialize@{initialize}!neur\+I\+O\+::gui\+::main\+Win@{neur\+I\+O\+::gui\+::main\+Win}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void neur\+I\+O.\+gui.\+main\+Win.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initialize the contents of the frame. 
+\begin{DoxyCode}
+38                               \{
+39         frmNeurio = \textcolor{keyword}{new} JFrame();
+40         frmNeurio.setIconImage(Toolkit.getDefaultToolkit().getImage(\textcolor{stringliteral}{"C:\(\backslash\)\(\backslash\)Users\(\backslash\)\(\backslash\)Brice\(\backslash\)\(\backslash\)Pictures\(\backslash\)\(\backslash\)neurio.png
+      "}));
+41         frmNeurio.setTitle(\textcolor{stringliteral}{"NeurIO"});
+42         frmNeurio.setBounds(100, 100, 800, 600);
+43         frmNeurio.setDefaultCloseOperation(JFrame.EXIT\_ON\_CLOSE);
+44         frmNeurio.getContentPane().setLayout(null);
+45         
+46         JPanel panel = \textcolor{keyword}{new} JPanel();
+47         panel.setBounds(100, 117, 461, 444);
+48         frmNeurio.getContentPane().add(panel);
+49         
+50         JPanel panel\_1 = \textcolor{keyword}{new} JPanel();
+51         panel\_1.setBounds(0, 117, 100, 444);
+52         frmNeurio.getContentPane().add(panel\_1);
+53         
+54         JPanel panel\_2 = \textcolor{keyword}{new} JPanel();
+55         panel\_2.setBounds(560, 117, 100, 444);
+56         frmNeurio.getContentPane().add(panel\_2);
+57     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classneur_i_o_1_1gui_1_1main_win_a83d7ab4e35ec91fe149719b2c25cf834}\label{classneur_i_o_1_1gui_1_1main_win_a83d7ab4e35ec91fe149719b2c25cf834}} 
+\index{neur\+I\+O\+::gui\+::main\+Win@{neur\+I\+O\+::gui\+::main\+Win}!main@{main}}
+\index{main@{main}!neur\+I\+O\+::gui\+::main\+Win@{neur\+I\+O\+::gui\+::main\+Win}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void neur\+I\+O.\+gui.\+main\+Win.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Launch the application. 
+\begin{DoxyCode}
+15                                            \{
+16         EventQueue.invokeLater(\textcolor{keyword}{new} Runnable() \{
+17             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+18                 \textcolor{keywordflow}{try} \{
+19                     \hyperlink{classmain_win}{mainWin} window = \textcolor{keyword}{new} \hyperlink{classneur_i_o_1_1gui_1_1main_win_afea0b56eba10143502905975ceba7e25}{mainWin}();
+20                     window.frmNeurio.setVisible(\textcolor{keyword}{true});
+21                 \} \textcolor{keywordflow}{catch} (Exception e) \{
+22                     e.printStackTrace();
+23                 \}
+24             \}
+25         \});
+26     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Neur\+I\+O/src/neur\+I\+O/gui/main\+Win.\+java\end{DoxyCompactItemize}

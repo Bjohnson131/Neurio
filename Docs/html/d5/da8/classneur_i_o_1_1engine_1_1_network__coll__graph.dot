@@ -1,0 +1,10 @@
+digraph "neurIO.engine.Network"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="neurIO.engine.Network",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" output\ncols\ninput" ,fontname="Helvetica"];
+  Node2 [label="neurIO.engine.Column",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d10/classneur_i_o_1_1engine_1_1_column.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" rows" ,fontname="Helvetica"];
+  Node3 [label="neurIO.system.Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d13/classneur_i_o_1_1system_1_1_node.html"];
+}

@@ -1,0 +1,80 @@
+\hypertarget{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input}{}\section{neur\+I\+O.\+data.\+bit\+Input.\+Bit\+Input Class Reference}
+\label{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input}\index{neur\+I\+O.\+data.\+bit\+Input.\+Bit\+Input@{neur\+I\+O.\+data.\+bit\+Input.\+Bit\+Input}}
+
+
+Inheritance diagram for neur\+I\+O.\+data.\+bit\+Input.\+Bit\+Input\+:
+% FIG 0
+
+
+Collaboration diagram for neur\+I\+O.\+data.\+bit\+Input.\+Bit\+Input\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input_a0cb3a5e6229418b6b2fa85184c855e32}{Bit\+Input} (boolean init)
+\item 
+boolean \hyperlink{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input_aba6bbd1b073178133b835343a45c722e}{get} ()
+\item 
+void \hyperlink{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input_a0fc46f4c9962c8cf8dc0387ecd61cd66}{set} (boolean \hyperlink{classneur_i_o_1_1system_1_1_node_a2c6a229d3d2cbf1b313d8797b70e487a}{value})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsection*{\hyperlink{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input}{Bit\+Input} }
+
+A small extension of Node that has methods for setting the \begin{DoxySeeAlso}{See also}
+\hyperlink{classneur_i_o_1_1system_1_1_node_a18dfd9e4acbf3ffbbd81870d2740254b}{Node} 
+\end{DoxySeeAlso}
+
+
+Definition at line 15 of file Bit\+Input.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input_a0cb3a5e6229418b6b2fa85184c855e32}\label{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input_a0cb3a5e6229418b6b2fa85184c855e32}} 
+\index{neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input@{neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input}!Bit\+Input@{Bit\+Input}}
+\index{Bit\+Input@{Bit\+Input}!neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input@{neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input}}
+\subsubsection{\texorpdfstring{Bit\+Input()}{BitInput()}}
+{\footnotesize\ttfamily neur\+I\+O.\+data.\+bit\+Input.\+Bit\+Input.\+Bit\+Input (\begin{DoxyParamCaption}\item[{boolean}]{init }\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em This} & is the initial state \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file Bit\+Input.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input_aba6bbd1b073178133b835343a45c722e}\label{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input_aba6bbd1b073178133b835343a45c722e}} 
+\index{neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input@{neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input}!get@{get}}
+\index{get@{get}!neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input@{neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily boolean neur\+I\+O.\+data.\+bit\+Input.\+Bit\+Input.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get method. 
+
+Definition at line 29 of file Bit\+Input.\+java.
+
+\mbox{\Hypertarget{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input_a0fc46f4c9962c8cf8dc0387ecd61cd66}\label{classneur_i_o_1_1data_1_1bit_input_1_1_bit_input_a0fc46f4c9962c8cf8dc0387ecd61cd66}} 
+\index{neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input@{neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input}!set@{set}}
+\index{set@{set}!neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input@{neur\+I\+O\+::data\+::bit\+Input\+::\+Bit\+Input}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void neur\+I\+O.\+data.\+bit\+Input.\+Bit\+Input.\+set (\begin{DoxyParamCaption}\item[{boolean}]{value }\end{DoxyParamCaption})}
+
+Set method. 
+
+Definition at line 35 of file Bit\+Input.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/neur\+I\+O/data/bit\+Input/\hyperlink{_bit_input_8java}{Bit\+Input.\+java}\end{DoxyCompactItemize}

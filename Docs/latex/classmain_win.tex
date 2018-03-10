@@ -1,0 +1,92 @@
+\hypertarget{classmain_win}{}\section{main\+Win Class Reference}
+\label{classmain_win}\index{main\+Win@{main\+Win}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmain_win_a49c22fb02a4187e69d8dd16607446e16}{main\+Win} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classmain_win_a8fcc6dd4f93af4dd5a72a74c461a1fe0}{main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmain_win_ad7d141c1498081d02e50ec3f8beb5013}{initialize} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmain_win_acdd1b1173499bd356487cde28e481fbe}\label{classmain_win_acdd1b1173499bd356487cde28e481fbe}} 
+J\+Frame {\bfseries frame}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsection*{Main\+Win }
+
+The soon to-\/be main window of Neurio.
+
+This window will be used for mock-\/configuration of neur-\/io based applications, as well as generating configuration files. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain_win_a49c22fb02a4187e69d8dd16607446e16}\label{classmain_win_a49c22fb02a4187e69d8dd16607446e16}} 
+\index{main\+Win@{main\+Win}!main\+Win@{main\+Win}}
+\index{main\+Win@{main\+Win}!main\+Win@{main\+Win}}
+\subsubsection{\texorpdfstring{main\+Win()}{mainWin()}}
+{\footnotesize\ttfamily main\+Win.\+main\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initializes the window 
+\begin{DoxyCode}
+45                      \{
+46         \hyperlink{classmain_win_ad7d141c1498081d02e50ec3f8beb5013}{initialize}();
+47     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain_win_ad7d141c1498081d02e50ec3f8beb5013}\label{classmain_win_ad7d141c1498081d02e50ec3f8beb5013}} 
+\index{main\+Win@{main\+Win}!initialize@{initialize}}
+\index{initialize@{initialize}!main\+Win@{main\+Win}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void main\+Win.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Initialize the contents of the frame. 
+\begin{DoxyCode}
+52                               \{
+53         frame = \textcolor{keyword}{new} JFrame();
+54         frame.setBounds(100, 100, 450, 300);
+55         frame.setDefaultCloseOperation(JFrame.EXIT\_ON\_CLOSE);
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classmain_win_a8fcc6dd4f93af4dd5a72a74c461a1fe0}\label{classmain_win_a8fcc6dd4f93af4dd5a72a74c461a1fe0}} 
+\index{main\+Win@{main\+Win}!main@{main}}
+\index{main@{main}!main\+Win@{main\+Win}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void main\+Win.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Launch the application with the main window.
+
+TO BE D\+E\+P\+R\+E\+C\+I\+A\+T\+ED S\+O\+ON.
+
+use The start class with parameters instead. 
+\begin{DoxyCode}
+29                                            \{
+30         EventQueue.invokeLater(\textcolor{keyword}{new} Runnable() \{
+31             \textcolor{keyword}{public} \textcolor{keywordtype}{void} run() \{
+32                 \textcolor{keywordflow}{try} \{
+33                     \hyperlink{classmain_win}{mainWin} window = \textcolor{keyword}{new} \hyperlink{classmain_win_a49c22fb02a4187e69d8dd16607446e16}{mainWin}();
+34                     window.frame.setVisible(\textcolor{keyword}{true});
+35                 \} \textcolor{keywordflow}{catch} (Exception e) \{
+36                     e.printStackTrace();
+37                 \}
+38             \}
+39         \});
+40     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Neur\+I\+O/src/main\+Win.\+java\end{DoxyCompactItemize}

@@ -16,7 +16,7 @@ public class Neuron extends Node {
 	Node[] children;
 	TruthTable function;
 	int width;
-	boolean evaluated = false;
+	volatile boolean evaluated = false;
 	volatile boolean value;//Volatility helps with evaluation.
 
 	public Neuron(Node[] children, TruthTable function) {

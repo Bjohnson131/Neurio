@@ -9,7 +9,7 @@ import neurIO.system.Node;
 /**
  * Column 
  * ===
- * A column is a set of nodes that cannot be connected to eachother.
+ * A column is a set of nodes that cannot be connected to each other.
  * Normally, nodes in columns cannot rely on columns that come "after" them.
  **/
 public class Column {

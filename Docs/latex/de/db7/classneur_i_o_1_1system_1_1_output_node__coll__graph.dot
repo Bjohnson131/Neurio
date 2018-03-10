@@ -1,0 +1,9 @@
+digraph "neurIO.system.OutputNode"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="neurIO.system.OutputNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="neurIO.system.Node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d13/classneur_i_o_1_1system_1_1_node.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" resultNode" ];
+}

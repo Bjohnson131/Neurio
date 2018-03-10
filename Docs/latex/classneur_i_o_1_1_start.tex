@@ -1,0 +1,195 @@
+\hypertarget{classneur_i_o_1_1_start}{}\section{neur\+I\+O.\+Start Class Reference}
+\label{classneur_i_o_1_1_start}\index{neur\+I\+O.\+Start@{neur\+I\+O.\+Start}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classneur_i_o_1_1_start_aef3f6b2b34c677ae10ff69b507a2d4b4}{main} (String\mbox{[}$\,$\mbox{]} args)
+\item 
+static void \hyperlink{classneur_i_o_1_1_start_ae057e60dad95a9bd37e41c860cae2fab}{print\+Help} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classneur_i_o_1_1_start_a2e18a32a484aa296caae592b4c8b9acd}{print\+Col\+Test} ()
+\item 
+static void \hyperlink{classneur_i_o_1_1_start_aedb59a7fabe14787e4d792a87bb23c7b}{print\+Truth\+Test} ()
+\item 
+static void \hyperlink{classneur_i_o_1_1_start_ae0f93675889ad60b4c42b39a64e94910}{print\+Network\+Test} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsection*{\hyperlink{classneur_i_o_1_1_start}{Start} }
+
+This is the main class to start tests, G\+UI, etc. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classneur_i_o_1_1_start_aef3f6b2b34c677ae10ff69b507a2d4b4}\label{classneur_i_o_1_1_start_aef3f6b2b34c677ae10ff69b507a2d4b4}} 
+\index{neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}!main@{main}}
+\index{main@{main}!neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void neur\+I\+O.\+Start.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The main program used to start the G\+UI, do tests, etc. This is N\+OT for A\+PI usage. 
+\begin{DoxyCode}
+28                                            \{
+29         Global.args = args;
+30         \hyperlink{classneur_i_o_1_1_start_a2e18a32a484aa296caae592b4c8b9acd}{printColTest}();
+31         \hyperlink{classneur_i_o_1_1_start_aedb59a7fabe14787e4d792a87bb23c7b}{printTruthTest}();
+32         \hyperlink{classneur_i_o_1_1_start_ae057e60dad95a9bd37e41c860cae2fab}{printHelp}();
+33         \hyperlink{classneur_i_o_1_1_start_ae0f93675889ad60b4c42b39a64e94910}{printNetworkTest}();
+34         \textcolor{keywordflow}{switch}(args[0])\{
+35             default : \hyperlink{classneur_i_o_1_1_start_ae057e60dad95a9bd37e41c860cae2fab}{printHelp}();
+36         \}
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classneur_i_o_1_1_start_a2e18a32a484aa296caae592b4c8b9acd}\label{classneur_i_o_1_1_start_a2e18a32a484aa296caae592b4c8b9acd}} 
+\index{neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}!print\+Col\+Test@{print\+Col\+Test}}
+\index{print\+Col\+Test@{print\+Col\+Test}!neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}}
+\subsubsection{\texorpdfstring{print\+Col\+Test()}{printColTest()}}
+{\footnotesize\ttfamily static void neur\+I\+O.\+Start.\+print\+Col\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Tests the naming system of Columns. This is in excel (A-\/Z,A\+A-\/\+ZZ, etc) 
+\begin{DoxyCode}
+55                                        \{
+56         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 27; i++) \{
+57             System.out.println(Truth.colIndexName(i));
+58         \}
+59     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classneur_i_o_1_1_start_ae057e60dad95a9bd37e41c860cae2fab}\label{classneur_i_o_1_1_start_ae057e60dad95a9bd37e41c860cae2fab}} 
+\index{neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}!print\+Help@{print\+Help}}
+\index{print\+Help@{print\+Help}!neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}}
+\subsubsection{\texorpdfstring{print\+Help()}{printHelp()}}
+{\footnotesize\ttfamily static void neur\+I\+O.\+Start.\+print\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Doesn\textquotesingle{}t actually print any help at the moment...
+
+will eventually print out a command line help form 
+\begin{DoxyCode}
+44                                   \{
+45         System.out.println(\textcolor{stringliteral}{"NEURIO 2017 Brice Johnson"});
+46         System.out.println(\textcolor{stringliteral}{"-----------------------------"});
+47         System.out.println(\textcolor{stringliteral}{"           OPTIONS           "});
+48         System.out.println(\textcolor{stringliteral}{"-----------------------------"});
+49     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classneur_i_o_1_1_start_ae0f93675889ad60b4c42b39a64e94910}\label{classneur_i_o_1_1_start_ae0f93675889ad60b4c42b39a64e94910}} 
+\index{neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}!print\+Network\+Test@{print\+Network\+Test}}
+\index{print\+Network\+Test@{print\+Network\+Test}!neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}}
+\subsubsection{\texorpdfstring{print\+Network\+Test()}{printNetworkTest()}}
+{\footnotesize\ttfamily static void neur\+I\+O.\+Start.\+print\+Network\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Prints out the result of a summing network which sums one byte at a time 
+\begin{DoxyCode}
+73                                           \{
+74         \textcolor{keywordtype}{boolean}[] xor = \{\textcolor{keyword}{false},\textcolor{keyword}{true},\textcolor{keyword}{true},\textcolor{keyword}{false}\};
+75         \textcolor{keywordtype}{boolean}[] and = \{\textcolor{keyword}{false},\textcolor{keyword}{false},\textcolor{keyword}{false},\textcolor{keyword}{true}\};
+76         \textcolor{keywordtype}{boolean}[] sum = \{\textcolor{keyword}{false},\textcolor{keyword}{true},\textcolor{keyword}{true},\textcolor{keyword}{false},\textcolor{keyword}{true},\textcolor{keyword}{false},\textcolor{keyword}{false},\textcolor{keyword}{true}\};
+77         \textcolor{keywordtype}{boolean}[] car = \{\textcolor{keyword}{false},\textcolor{keyword}{false},\textcolor{keyword}{false},\textcolor{keyword}{true},\textcolor{keyword}{false},\textcolor{keyword}{true},\textcolor{keyword}{true},\textcolor{keyword}{true}\};
+78         
+79         Network eightBitAdder = \textcolor{keyword}{new} Network(8,2);
+80         BitInput A1 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+81         A2 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+82         A3 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+83         A4 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+84         A5 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+85         A6 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+86         A7 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+87         A8 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+88         B1 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+89         B2 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+90         B3 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+91         B4 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+92         B5 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+93         B6 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+94         B7 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false}),
+95         B8 = \textcolor{keyword}{new} BitInput(\textcolor{keyword}{false});
+96         BitInput[] num1 = \{A1,A2,A3,A4,A5,A6,A7,A8\};
+97         BitInput[] num2 = \{B1,B2,B3,B4,B5,B6,B7,B8\};
+98         BitInput[] nums = \{A1,A2,A3,A4,A5,A6,A7,A8,B1,B2,B3,B4,B5,B6,B7,B8\};
+99         BitInputSet bus1 = \textcolor{keyword}{new} BitInputSet(num1);
+100         BitInputSet bus2 = \textcolor{keyword}{new} BitInputSet(num2);
+101         
+102         Column in = \textcolor{keyword}{new} Column(nums);
+103         
+104         eightBitAdder.input = in;
+105         
+106         bus1.numToInput(234);
+107         bus2.numToInput(154);
+108         
+109         Node[] bitIns1 = \{A1,B1\};  \textcolor{comment}{//Add the first bit of numbers A and B together.}
+110         Neuron sum1= \textcolor{keyword}{new} Neuron(bitIns1, \textcolor{keyword}{new} TruthTable(xor)); \textcolor{comment}{//Get the sum of the bits}
+111         Neuron car1= \textcolor{keyword}{new} Neuron(bitIns1, \textcolor{keyword}{new} TruthTable(and)); \textcolor{comment}{//Get the carry of the bits}
+112         Column c1 = (\textcolor{keyword}{new} Column(sum1,car1)); \textcolor{comment}{// Make into a function}
+113         eightBitAdder.addColumn(c1);\textcolor{comment}{// Add to a network}
+114         Node[] bitIns2 = \{A2,B2,car1\};\textcolor{comment}{//Add the last carry, and the second bits together.}
+115         Neuron sum2 = \textcolor{keyword}{new} Neuron(bitIns2,\textcolor{keyword}{new} TruthTable(sum));\textcolor{comment}{// Different truth tables are used for 3
+       bits.}
+116         Neuron car2 = \textcolor{keyword}{new} Neuron(bitIns2,\textcolor{keyword}{new} TruthTable(car));
+117         Column c2 = (\textcolor{keyword}{new} Column(sum2,car2));
+118         eightBitAdder.addColumn(c2);
+119         Node[] bitIns3 = \{A3,B3,car2\};
+120         Neuron sum3 = \textcolor{keyword}{new} Neuron(bitIns3,\textcolor{keyword}{new} TruthTable(sum));
+121         Neuron car3 = \textcolor{keyword}{new} Neuron(bitIns3,\textcolor{keyword}{new} TruthTable(car));
+122         Column c3 = (\textcolor{keyword}{new} Column(sum3,car3));
+123         eightBitAdder.addColumn(c3);
+124         Node[] bitIns4 = \{A4,B4,car3\};
+125         Neuron sum4 = \textcolor{keyword}{new} Neuron(bitIns4,\textcolor{keyword}{new} TruthTable(sum));
+126         Neuron car4 = \textcolor{keyword}{new} Neuron(bitIns4,\textcolor{keyword}{new} TruthTable(car));
+127         Column c4 = (\textcolor{keyword}{new} Column(sum4,car4));
+128         eightBitAdder.addColumn(c4);
+129         Node[] bitIns5 = \{A5,B5,car4\};
+130         Neuron sum5 = \textcolor{keyword}{new} Neuron(bitIns5,\textcolor{keyword}{new} TruthTable(sum));
+131         Neuron car5 = \textcolor{keyword}{new} Neuron(bitIns5,\textcolor{keyword}{new} TruthTable(car));
+132         Column c5 = (\textcolor{keyword}{new} Column(sum5,car5));
+133         eightBitAdder.addColumn(c5);
+134         Node[] bitIns6 = \{A6,B6,car5\};
+135         Neuron sum6 = \textcolor{keyword}{new} Neuron(bitIns6,\textcolor{keyword}{new} TruthTable(sum));
+136         Neuron car6 = \textcolor{keyword}{new} Neuron(bitIns6,\textcolor{keyword}{new} TruthTable(car));
+137         Column c6 = (\textcolor{keyword}{new} Column(sum6,car6));
+138         eightBitAdder.addColumn(c6);
+139         Node[] bitIns7 = \{A7,B7,car6\};
+140         Neuron sum7 = \textcolor{keyword}{new} Neuron(bitIns7,\textcolor{keyword}{new} TruthTable(sum));
+141         Neuron car7 = \textcolor{keyword}{new} Neuron(bitIns7,\textcolor{keyword}{new} TruthTable(car));
+142         Column c7 = (\textcolor{keyword}{new} Column(sum7,car7));
+143         eightBitAdder.addColumn(c7);
+144         Node[] bitIns8 = \{A8,B8,car7\};
+145         Neuron sum8 = \textcolor{keyword}{new} Neuron(bitIns8,\textcolor{keyword}{new} TruthTable(sum));
+146         Neuron car8 = \textcolor{keyword}{new} Neuron(bitIns8,\textcolor{keyword}{new} TruthTable(car));
+147         Column c8 = (\textcolor{keyword}{new} Column(sum8,car8));
+148         eightBitAdder.addColumn(c8);
+149         OutputNode[] outputNodes = OutputNode.makeOutputNodes(sum1,sum2,sum3,sum4,sum5,sum6,sum7,sum8,car8)
+      ;
+150         Column outputColumn = \textcolor{keyword}{new} Column(outputNodes);
+151         eightBitAdder.output = outputColumn;
+152         
+153         \textcolor{keywordtype}{int} result = 0;
+154         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < outputNodes.length; i++)\{
+155             System.out.println(outputNodes[i].getValue());
+156             result +=(outputNodes[i].getValue()?1:0)<<i;
+157         \}
+158         
+159         System.out.println(result);
+160         
+161     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classneur_i_o_1_1_start_aedb59a7fabe14787e4d792a87bb23c7b}\label{classneur_i_o_1_1_start_aedb59a7fabe14787e4d792a87bb23c7b}} 
+\index{neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}!print\+Truth\+Test@{print\+Truth\+Test}}
+\index{print\+Truth\+Test@{print\+Truth\+Test}!neur\+I\+O\+::\+Start@{neur\+I\+O\+::\+Start}}
+\subsubsection{\texorpdfstring{print\+Truth\+Test()}{printTruthTest()}}
+{\footnotesize\ttfamily static void neur\+I\+O.\+Start.\+print\+Truth\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Prints a truth table using the To\+String test. 
+\begin{DoxyCode}
+64                                         \{
+65         \textcolor{keywordtype}{boolean}[] conditions = \{\textcolor{keyword}{false}, \textcolor{keyword}{false}, \textcolor{keyword}{true}\};
+66         Truth truth = \textcolor{keyword}{new} Truth(conditions, \textcolor{keyword}{true});
+67         System.out.println(truth.toString());
+68     \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Neur\+I\+O/src/neur\+I\+O/Start.\+java\end{DoxyCompactItemize}
