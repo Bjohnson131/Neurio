@@ -1,1 +1,1 @@
-WIP
+Neurio is a platform which trains an AI based on LUTs, and optionally, flipflops. This is specifically meant for applying neural networks to FPGAs for ultra-fast real-time neural network processing. Unfortunately, A lot of the code was lost in a HDD failure (D'oh!), but I'm working (slowly) on something that will replace this.
